@@ -1,0 +1,119 @@
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+     background: url(resources/BG_gradient.png);
+     background-size: cover;
+ }
+ 
+ .box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: auto;
+     width: 500px;
+     padding: 50px;
+     background: rgba(0, 0, 0, .8);
+     box-sizing: border-box;
+     box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+     border-radius: 50px;
+ }
+ 
+ .box h2 {
+     margin: 0 0 30px;
+     padding: 0;
+     color: #fff;
+     text-align: center;
+ }
+ 
+ .box .inputBox {
+     position: relative;
+ }
+ 
+ .box .inputBox input {
+     width: 100%;
+     padding: 10px 0;
+     font-size: 16px;
+     color: #fff;
+     margin-bottom: 30px;
+     border: none;
+     border-bottom: 1px solid #fff;
+     outline: none;
+     background: transparent;
+ }
+ 
+ .box .inputBox label {
+     position: absolute;
+     top: 0;
+     left: 0;
+     padding: 10px 0;
+     font-size: 16px;
+     color: #fff;
+     pointer-events: none;
+     transition: .5s;
+ }
+ 
+ .box .inputBox input:focus~label,
+ .box .inputBox input:valid~label {
+     top: -20px;
+     left: 0;
+     color: #03a9f4;
+     font-size: 12px;
+ }
+ 
+ .box input[type="submit"] {
+     display: inline-block;
+     background-image: linear-gradient(#25AAE2, #6DCBE9);
+     color: white;
+     padding: 15px 70px;
+     margin: auto;
+     text-align: center;
+     position: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 17px;
+     font-weight: bold;
+     border-radius: 50px;
+     cursor: pointer;
+     border: 0;
+ }
+ /* MODIFICATIONS */
+ 
+ .linkpassword {
+     font-size: 15px;
+     color: #25AAE2;
+     position: relative;
+     top: -20;
+ }
+ 
+ .buttons {
+     text-align: center;
+ }
+ 
+ .button2 {
+     display: inline-block;
+     background-color: #FBFBFB;
+     color: #273132;
+     color-adjust: 70%;
+     padding: 15px 60px;
+     margin: auto;
+     text-align: center;
+     position: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 17px;
+     font-weight: bold;
+     border-radius: 50px;
+     cursor: pointer;
+ }
+ 
+ .logofinal {
+     position: center;
+     text-align: center;
+ }
+ 
+ .logoimage {
+     width: 150px;
+     height: auto;
+ }

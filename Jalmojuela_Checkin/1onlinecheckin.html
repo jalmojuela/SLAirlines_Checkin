@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proj4: Homepage</title>
+<link rel="stylesheet" type="text/css" href="css/1onlinecheckin.css">
+<script defer src="script2.js"></script>
+
+<header>
+    <h1 class="logo" id="logoname"><a href="home.html" class="hyperlink">SL Airlines</a></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+        <ul>
+            <li><a href="home.html" id="home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="user.html">User</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+</header>
+
+<body>
+
+    <div class="content">
+        <text id="navName">ONLINE CHECK-IN</text><br>
+        <hr width="60%"><br>
+        <div class="rectangle">
+            <p id="content">Kindly input the following details below<br> to proceed with Online Check-in</p>
+            <div>
+                Booking Reference Number:<br>
+                <input type="text" class="input"><br><br> Departure (City):<br>
+                <select>
+                    <option value="none"></option>
+                    <option value="MNL">Manila, Philippines (MNL)</option>
+                    <option value="CBO">Cubao, Philippines (CBO)</option>
+                    <option value="CEB">Cebu, Philippines (CEB)</option>
+                    <option value="TYO">Tokyo, Japan (TYO)</option>
+                    <option value="HSM">Hiroshima, Japan (HSM)</option>
+                </select><br><br>
+                <!-- <input type="" class="input2"><br><br> -->
+                Surname (any of the guests):<br>
+                <input type="text" class="input"><br><br>
+            </div>
+            <button data-modal-target="#modal">SEARCH</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">SUCCESS</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <br> You have successfully checked-in!<br><br> Click the Proceed Button to see your E-Booking Pass.
+                    <br><br>
+                    <div class="proceedbutton"><a href="2boardingpass.html" class="button2">PROCEED ></a></div>
+                </div>
+            </div>
+            <div id="overlay"></div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

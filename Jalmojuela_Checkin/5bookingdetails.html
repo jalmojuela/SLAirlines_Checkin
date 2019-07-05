@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-BOARDING PASS</title>
+<link rel="stylesheet" type="text/css" href="css/5bookingdetails.css">
+<script defer src="script.js"></script>
+<header>
+    <h1 class="logo" id="logoname"><a href="home.html" class="hyperlink">SL Airlines</a></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+        <ul>
+            <li><a href="home.html" id="home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="user.html">User</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+</header>
+
+<body>
+
+    <div class="content">
+        <text id="navName">BOOKING DETAILS</text><br>
+        <hr width="60%"><br>
+        <div class="rectangle">
+            <br>
+            <p id="content1">Your current Booking Reference Number is</p>
+            <img src="css/resources/Barcode2.png">
+            <p id="content2">1301 87000</p>
+            <button data-modal-target="#modal">?</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">Important Note</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    * Booking Changes is allowed but it must be done more than 4 hours before the flight subject to penalties and fare difference.<br><br> *If you have issues or concerns with your Booking Transaction, you may click the Save button to
+                    generate a copy. Then, attached the pdf file to our Customer Service email.<br>
+                    <span><p id="email"><img src="css/resources/Email_icon.png">SL.AIRLINES_CS@YAHOO.COM</p></span>
+                    <div class="savebutton"><a href="BOOKING_DETAILS.pdf" target="blank" class="button2">SAVE A COPY (.pdf)</a></div>
+                </div>
+            </div>
+            <div id="overlay"></div>
+            <hr width="80%"><br>
+
+            <div class="content3">
+                <span id="important">Booking Details</span><br>
+                <span id="content4">Status: Confirmed<br>
+                    <span id="content4">Booking Date: Wed, 10 April 2019<br><br>
+
+                    <span id="important">Guest Details</span><br>
+                <span id="content4">1.  Itsumo Kokoro (Adult)<br></span>
+                <span id="content4">2.  Hehoshi Itsuka (Adult)</span><br>
+                <span id="content4">3.  Dareka To Mata (Adult)</span><br>
+                <span id="content4">4.  Koini Ochitemo (Adult)</span><br><br>
+
+                <span id="important">Flight Details</span><br>
+                <span id="important2">One Way Trip</span><br>
+                <span id="important">Departure:</span><span id="content5">Cubao, Philippines</span><br>
+                <span id="important">Arrival:</span><span id="content5">Hiroshima, Japan</span><br><br>
+                <span id="important3">CBO</span><span><img src="css/resources/AirplaneMode.png"></span><span id="important3">HSM</span><br><br>
+
+                <span id="important">Payment Details</span><br>
+                <span id="content6">TOTAL AMOUNT:</span><span id="content6">PHP 20,909</span>
+                <hr width="70%">
+
+                <div class="prices">
+                    Base Fare<br> Value Added Tax (VAT):<br> Fuel Surcharge:<br> Administrative Fee:<br>
+                </div>
+
+                <div class="prices2">
+                    PHP 18,000<br> PHP 1,409<br> PHP 1,000<br> PHP 500<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
